@@ -6,7 +6,7 @@
 .cardBody{
     width: 1900px;
     height: 1000px;
-    background-color: #afd7f7;
+    background-image: url("img.jpg");
     border: solid white 2px;
     text-shadow: white 0px 0px 2px;
     font-size: 17px;
