@@ -2,7 +2,8 @@ import React from 'react';
 import './Profil.css';
 import {Navbar,Nav,FormControl,Button,Accordion,Card} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
+import { defaultProps } from 'default-props'
 
 function Profile (props) {
     
@@ -23,8 +24,8 @@ function Profile (props) {
     </Card.Header>
     <Accordion.Collapse eventKey="0">
       <Card.Body className="cardBody">  
-     <h1> {props.fullName} <br/> {props.bio} <br/> {props.profession} <h2 className="img">{props.children}</h2> </h1>
-      <button class="btn btn-danger" onClick={() => props.HandleName(props.fullName)}>
+     <h1> {props.name} <br/> {props.bio} <br/> {props.profession} <h2 className="img">{props.children}</h2> </h1>
+      <button class="btn btn-danger" onClick={() => props.HandleName(props.name)}>
     Show My name !
     </button>
  
@@ -45,9 +46,8 @@ function Profile (props) {
    }
  // ********* Set default props********//
  Profile.defaultProps = {
-    fullName: "im",
-    bio:"b",
-    profession:"prof"
+    name: "Imen",
+   
    };
    //********  propTypes ********//
    Profile.propTypes = {
