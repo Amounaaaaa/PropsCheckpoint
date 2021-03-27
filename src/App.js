@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './Profil/Profile';
+import {Col,Image} from 'react-bootstrap';
+import {Navbar,Nav,FormControl,Button,Accordion,Card} from 'react-bootstrap';
 
 function App() {
+  const styleObject={color:"darkred",
+                    textAlign:'center',
+                
+}
+  const HandleName = name => alert(name);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div style={styleObject}>
+  
+
+    <Profile  fullName="Houimli Imen :) "  bio="Bio"  profession="Student"  HandleName={HandleName}/> 
+    <Col xs={6} md={4}>
+               <Image className="img" src={"profileImage.jpg"} alt=""  roundedCircle />
+     </Col>
+   
+  </div>
   );
 }
 
 export default App;
+//

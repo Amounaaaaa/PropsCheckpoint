@@ -1,0 +1,16 @@
+.img{
+    float: left;
+   margin: -997px 10px 33px 1361px;
+   width: 370px;
+}
+.cardBody{
+    width: 1900px;
+    height: 1000px;
+    background-color: #afd7f7;
+    border: solid white 2px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 17px;
+    background-size: 1900px;
+    background-repeat: no-repeat;
+
+}
